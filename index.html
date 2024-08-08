@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hole Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hole Game</h1>
+            <nav>
+                <button id="theme-toggle" class="nav-button">
+                    <i class="fas fa-adjust"></i> Toggle Theme
+                </button>
+                <button id="customize-hole" class="nav-button">
+                    <i class="fas fa-paint-brush"></i> Customize Hole
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <canvas id="gameCanvas"></canvas>
+        <aside id="customization-panel" class="hidden">
+            <h2>Customize Your Hole</h2>
+            <form id="customization-form">
+                <label for="hole-color">Hole Color:</label>
+                <input type="color" id="hole-color" name="hole-color" value="#ff0000">
+                
+                <label for="hole-size">Hole Size:</label>
+                <input type="range" id="hole-size" name="hole-size" min="10" max="100" value="50">
+                
+                <button type="button" id="apply-customization">Apply</button>
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hole Game. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
 
